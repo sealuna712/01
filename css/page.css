@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{ font-family: 'Noto Sans KR', sans-serif; }
+a{ 
+    font-family: 'Black Han Sans', sans-serif;
+    text-decoration: none;
+    color: black ;
+    font-size: 2em ;
+    margin: 0 0.5em ;
+}
+
+.box, h2{ text-align: center;}
+
+/*
+ 글자해당스타일은 모두 유전된다.
+ color, font-size, font-family, line-height 엄마태그에 넣으면 아기에게도 전달된다.
+ */
+.box{ font-size: 0}
+.box a{ border: 3px solid black;
+    display: inline-block; 
+    /* 인라인태그이므로 반드시 display block 계열로 설정해야 너비높이먹힌다. */
+    width: 50px; height: 50px;
+    border-radius: 30px;
+    transition: background,width 0.5s;
+    margin: 0 0.25rem ;
+}
+
+.box a:first-child{  border-color: blueviolet;}
+.box a:nth-child(2){  border-color: yellowgreen ;}
+.box a:last-child{  border-color: salmon ;}
+
+.box a:hover{ width:150px ; }
+
+.box a:first-child:hover{ background-color:blueviolet;}
+.box a:nth-child(2):hover{ background-color:yellowgreen;}
+.box a:last-child:hover{ background-color:salmon;}
